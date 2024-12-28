@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四六级学习平台</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>四六级学习平台</h1>
+        <nav>
+            <ul>
+                <li><a href="#words">单词学习</a></li>
+                <li><a href="#listening">听力练习</a></li>
+                <li><a href="#reading">阅读材料</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="words">
+            <h2>单词学习</h2>
+            <div class="word-card">
+                <div class="word">abandon</div>
+                <div class="meaning">v. 放弃，遗弃</div>
+                <button onclick="playAudio('abandon')">播放发音</button>
+            </div>
+        </section>
+
+        <section id="listening">
+            <h2>听力练习</h2>
+            <div class="listening-exercise">
+                <audio controls>
+                    <source src="audio/sample.mp3" type="audio/mpeg">
+                    您的浏览器不支持音频元素。
+                </audio>
+                <div class="questions">
+                    <p>听力问题示例：</p>
+                    <form>
+                        <label>
+                            <input type="radio" name="q1"> A. 选项1
+                        </label>
+                        <label>
+                            <input type="radio" name="q1"> B. 选项2
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="reading">
+            <h2>阅读材料</h2>
+            <article class="reading-text">
+                <h3>示例阅读文章</h3>
+                <p>这里是示例阅读文章内容...</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
